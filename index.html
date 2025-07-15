@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Demestrine Awuor - Social Media Strategist</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #ffc0cb 50%, #fff0f5 50%);
+      color: #1d1d20;
+    }
+    header {
+      display: flex;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 200px;
+      background-color: #fff0f5;
+      border-right: 2px solid #ffe6f0;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+    header nav ul li {
+      margin-bottom: 20px;
+    }
+    header nav ul li a {
+      text-decoration: none;
+      color: #9b2e61;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    header nav ul li a:hover {
+      text-decoration: underline;
+    }
+    .main-content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffe6f0;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #9b2e61;
+    }
+    .hero-text h2 {
+      font-size: 1.5rem;
+      color: #3d0082;
+    }
+    .section {
+      display: none;
+      padding: 20px;
+    }
+    input, select, textarea {
+      display: block;
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #9b2e61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff5e8e;
+    }
+    .footer {
+      margin-top: 60px;
+      padding: 10px;
+      background: #9b2e61;
+      color: white;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    .flex-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .flex-cards > div {
+      flex: 1;
+      min-width: 250px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .product-card button {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="navigateToPage('home')">🏠 Home</a></li>
+        <li><a href="#" onclick="navigateToPage('services')">🛠️ Services</a></li>
+        <li><a href="#" onclick="navigateToPage('book')">📅 Book a Session</a></li>
+        <li><a href="#" onclick="navigateToPage('products')">🛍️ Products</a></li>
+        <li><a href="#" onclick="navigateToPage('contact')">📞 Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <!-- Home -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>DEMESTRINE AWUOR</h1>
+        <h2>Social Media Strategist</h2>
+        <p>Helping Kenyan brands grow online through powerful strategy and ad execution.</p>
+      </div>
+    </section>
+
+    <div class="flex-cards" id="home-cards">
+      <div><h3><strong>Strategy</strong></h3><p>Custom social media strategies tailored to your brand and audience.</p></div>
+      <div><h3><strong>Ads Management</strong></h3><p>Google Ads setup and optimization to maximize your ROI.</p></div>
+      <div><h3><strong>Analytics</strong></h3><p>Data-driven insights to improve your content performance.</p></div>
+    </div>
+
+    <!-- Services -->
+    <div class="section" id="services">
+      <h3>Services</h3>
+      <div class="flex-cards">
+        <div>
+          <h4>👤 1-on-1 Strategy Consultation</h4>
+          <p><strong>60 minutes — KES 5,000</strong></p>
+          <p>Social media audit<br/>✅ Target audience analysis<br/>✅ Content strategy</p>
+          <button>Book Now</button>
+        </div>
+        <div>
+          <h4>🌱 Starter Pack</h4>
+          <p>Best for new brands — <strong>KES 10,000</strong></p>
+          <p>Branding Setup<br/>✅ Post Templates<br/>✅ Caption Guide</p>
+          <button>Book Now</button>
+        </div>
+        <div>
+          <h4>💎 Premium Management</h4>
+          <p>Full strategy & execution — <strong>KES 35,000</strong></p>
+          <p>Content creation<br/>✅ Scheduling<br/>✅ Ad support</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Book a Session -->
+    <div class="section" id="book">
+      <h3>📅 Book a Strategy Session</h3>
+      <input type="text" placeholder="Your Full Name" />
+      <input type="email" placeholder="Your Email Address" />
+      <input type="tel" placeholder="Your Phone Number" />
+      <label for="experience">Social Media Experience Level:</label>
+      <select id="experience">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+      <label for="budget">Your Budget Range:</label>
+      <select id="budget">
+        <option>Below KES 5,000</option>
+        <option>KES 5,000–10,000</option>
+        <option>Above KES 10,000</option>
+      </select>
+      <p>You’ll receive a response within 24 hours.</p>
+      <button>Submit</button>
+    </div>
+
+    <!-- Products -->
+    <div class="section" id="products">
+      <h3>🛍️ Products</h3>
+      <div class="product-card">
+        <img src="https://th.bing.com/th/id/OIP.oJvXVcKDiL3R_h-2qMphTwHaKg?w=208&h=296&c=7&r=0&o=7&pid=1.7&rm=3"alt="Product 1" />
+        <h4>Instagram Template Bundle</h4>
+        <p>KES 1,500</p>
+        <button>Buy Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="data:image/webp;base64,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" alt="Product 2" />
+        <h4>Content Planner PDF</h4>
+        <p>KES 1,000</p>
+        <button>Buy Now</button>
+        <button>Add to Cart</button>
+      </div>
+      <p><strong>Payments:</strong> M-Pesa Paybill: 123456 | </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="section" id="contact">
+      <h3>📞 Contact</h3>
+      <p><strong>Location:</strong> Lavingtone, Olenguruone Avenue</p>
+      <p><strong>Instagram:</strong> @demestrine</p>
+      <p><strong>Business Hours:</strong> Mon – Fri, 9am – 5pm</p>
+      <h4>Send a Message</h4>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>© 2025 Demestrine Awuor | All Rights Reserved</p>
+      <p>Phone: 0748276265</p>
+      <p>Location: Lavingtone, Olenguruone Avenue</p>
+      <p>Name: Demestrine Awuor</p>
+    </div>
+  </div>
+
+  <script>
+    function navigateToPage(sectionId) {
+      document.querySelectorAll('.section, .hero, #home-cards').forEach(sec => sec.style.display = 'none');
+      const target = document.getElementById(sectionId);
+      if (target) {
+        if (sectionId === 'home') {
+          document.querySelector('.hero').style.display = 'flex';
+          document.getElementById('home-cards').style.display = 'flex';
+        } else {
+          target.style.display = 'block';
+        }
+      }
+    }
+    // Show home by default
+    navigateToPage('home');
+  </script>
+</body>
+</html>
+
