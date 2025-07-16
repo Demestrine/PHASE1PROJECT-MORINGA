@@ -1,37 +1,13 @@
+
 [
   {
     "name": "1-on-1 Social Media Strategy Consultation",
     "price": 5000,
-    "description": "Personalized strategy session to analyze your current presence and create a roadmap for growth."
+    "description": "Personalized strategy session to analyze your current presence."
   },
   {
     "name": "Google Ads Campaign Setup & Management",
     "price": 16000,
-    "description": "Complete Google Ads management from setup to optimization for maximum ROI."
-  },
-  {
-    "name": "Monthly Social Media Management",
-    "price": 25000,
-    "description": "Comprehensive management of all your social media platforms with regular content and engagement."
-  },
-  {
-    "name": "Influencer & Brand Collaboration Guide",
-    "price": 7000,
-    "description": "Strategic framework to build profitable partnerships with influencers and brands."
-  },
-  {
-    "name": "Starter Package",
-    "price": 12000,
-    "description": "Perfect for small businesses getting started — includes audit, strategy call, and templates."
-  },
-  {
-    "name": "Growth Package",
-    "price": 35000,
-    "description": "Ideal for established businesses ready to scale — includes content, ads, and strategy."
-  },
-  {
-    "name": "Premium Package",
-    "price": 60000,
-    "description": "Complete solution with full management, influencer strategy, weekly check-ins, and priority support."
+    "description": "Google Ads setup, optimization, and reporting."
   }
 ]
