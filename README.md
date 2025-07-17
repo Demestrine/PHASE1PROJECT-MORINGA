@@ -12,6 +12,13 @@
 3. Live demo: [GitHub Pages URL]
 
 ### API Used
-[API Documentation Link]
+1.GitHub API
+Purpose: Fetch service data from your repository
+2.Calendly API
+Purpose: Booking system integration
+3. FormSubmit API
+- Submissions are sent to your-email@example.com
+- Auto-redirects to thank-you page
+- No server-side code needed
 
 License: MIT
