@@ -19,7 +19,7 @@ Purpose: Fetch service data from your repository
 Purpose: Booking system integration
 
 3. FormSubmit API
-- Submissions are sent to your-demestrinea@gmail.com
+- Submissions are sent to demestrinea@gmail.com
 
 
 License: MIT
